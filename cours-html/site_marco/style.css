@@ -4,11 +4,18 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid black;
   background-color: #bbd0ff;
+  position: sticky;
+  top: 0;
 }
 h3 {
   font-family: "Caveat", cursive;
@@ -167,6 +174,7 @@ footer {
   background-color: #fcf6bd;
   display: flex;
   padding-left: 500px;
+  border-bottom: 2px solid black;
 }
 footer h3 {
   border-bottom: 2px solid black;
@@ -190,9 +198,6 @@ footer div div div {
   padding-bottom: 40px;
 }
 
-footer div div svg {
-}
-
 footer div div div a {
   text-decoration: none;
   color: black;
@@ -201,4 +206,73 @@ footer div div div a {
 
 footer div div div a:hover {
   text-decoration: underline;
+}
+
+/* breakpoint */
+
+#basdepage {
+  display: flex;
+  background-color: aqua;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#basdepage div p {
+  font-family: "Amatic SC", sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+  border-bottom: 1px solid black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 39px;
+}
+
+#lien {
+  padding-bottom: 20px;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 22px;
+  padding-left: 38px;
+  padding-top: 8px;
+}
+
+#lien:hover {
+  text-decoration: underline;
+}
+#lien a {
+  text-decoration: none;
+}
+
+#lien div {
+  gap: 20px;
+  display: flex;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    flex-direction: row;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  header div h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #left {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+  #right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }

@@ -1,18 +1,18 @@
-# echo "Bonjour les dev" 
-# read x
-# echo "x=$x"
+echo "Bonjour les dev" 
+read x
+echo "x=$x"
 
-# if [ $x -ge 14 ]; then
-#     echo "mention"
-# elif [ $x -gt 9 ]; then
-#     echo "admis"
-# else
-#     echo "redouble"
-# fi
+if [ $x -ge 14 ]; then
+    echo "mention"
+elif [ $x -gt 9 ]; then
+    echo "admis"
+else
+    echo "redouble"
+fi
 
-# for i in {1..10};do
-#     echo "bonjour$i"
-# done
+for i in {1..10};do
+    echo "bonjour$i"
+done
 
 
 for i in {1..5};do

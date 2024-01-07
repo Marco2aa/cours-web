@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+header {
+  display: flex;
+  justify-content: center;
+  /* background-color: aqua; */
+  height: 100px;
+  align-items: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blueviolet; */
+  gap: 20px;
+}
+
+.button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-family: 'Kanit', sans-serif;
+  border-color: green;
+  font-size: 30px;
+}
+
+input {
+  width: 320px;
+  height: 60px;
+  border: solid green 3px;
+  font-family: 'Kanit', sans-serif;
+  font-size: 30px;
+
+}
+
+.row {
+  display: flex;
+  /* background-color: chartreuse; */
+  gap: 30px;
+ 
+}
+
+.operator {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+
+#add , #sub, #div, #mul {
+  font-size: 30px;
+}
+
+.buttonclear {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-family: 'Kanit', sans-serif;
+  border-color: green;
+  font-size: 30px;
+}
+
+.buttondelete {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-family: 'Kanit', sans-serif;
+  border-color: green;
+  font-size: 30px;
+}
+
+.buttonequal {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-family: 'Kanit', sans-serif;
+  border-color: green;
+  font-size: 30px;
+}
